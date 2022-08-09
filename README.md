@@ -2,4 +2,4 @@
 
 This project is implemented using **JavaScript, PHP, MySQL**.
 
-Refer to our Powerpoint and Word docx for more detail about the project.
+Refer to our Slides and Report for more detail about the project.
