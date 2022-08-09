@@ -1,0 +1,406 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* <-- HERO IMAGE --> */
+
+.hero-image {
+  background-image: url("../img/counterbanner.jpg");
+  background-position: center;
+  height: 80vh;
+  width: 100%;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  box-shadow: 0 0 0 1000px rgba(0,0,0,0.3) inset;
+}
+
+.hometitle{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title h1{
+    font-size: 70px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: white;
+    margin-top: 80px;
+}
+
+.title p{
+  color: white;
+  letter-spacing: 1px;
+  font-size: 30px;
+}
+
+.hometitle .title{
+  position: absolute;
+  text-align: center;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 50px;
+}
+
+
+/* <--SHOPPING CART--> */
+
+.btn-header {
+    margin: .5em 15% 2em 15%;
+    color: white;
+    border: 2px solid #2D9CDB;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 0;
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.btn-header:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.tour-row {
+    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.tour-row:last-child {
+    border: none;
+}
+
+.tour-item {
+    display: inline-block;
+    padding-right: 1em;
+    color: black;
+}
+
+.tour-date {
+    color: #555;
+    width: 11%;
+    font-weight: bold;
+}
+
+.tour-city {
+    width: 24%;
+}
+
+.cart-right p{
+  font-size: 30px;
+}
+
+.tour-arena {
+    width: 42%;
+}
+
+.tour-price{
+  float: right;
+}
+
+.tour-btn{
+    max-width: 19%;
+}
+
+
+/* <-- CART --> */
+
+.cart-column {
+    display: flex;
+    font-size: 10px;
+    align-items: center;
+    /* border-bottom: 1px solid black; */
+    margin-right: 0;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-column .fas{
+  font-size: 20px;
+  margin-left: auto;
+}
+
+.fas .fa-trash{
+  background-color: #a9a9a9;
+}
+
+.fas .fa-shopping-cart{
+  font-size: 20px;
+}
+
+.cart-column .fas:hover{
+  color: #c0c0c0;
+}
+
+.cart-right{
+  float: right;
+  background-color: black;
+}
+
+.cart-item {
+    /* width: 45%; */
+    font-size: 10px;
+    font-weight: bold;
+    width: 80%;
+}
+
+.cart-price {
+    /* width: 20%; */
+    font-weight: bold;
+    font-size: 10px;
+    color: #EB5757;
+}
+
+.cart-item-title , .cart-lot {
+    color: #333;
+    font-size: 10px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.cart-row .start-datetime, .cart-row .end-datetime{
+    font-size: 10px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.btn-purchase {
+    font-family: 'Open Sans';
+    margin-top: 10px;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 100px;
+    border-radius: 10px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    background: linear-gradient(65deg, #7b4397 , #dc2430);
+    display: block;
+    border: none;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.btn-purchase span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn-purchase span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn-purchase:hover span {
+  padding-right: 25px;
+}
+
+.btn-purchase:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.cart-box{
+  position: absolute;
+  right: 0;
+  padding: 25px ;
+  border-radius: 15px;
+  background: #f0f0f0;
+  margin-right: 20px;
+}
+
+
+.cart-text h1{
+  font-size: 20px;
+  margin-top: -20px;
+  color: #333;
+}
+
+.cart-total {
+    text-align: end;
+    float: right;
+    font-size: 20px;
+    margin-top: -30px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+}
+
+/* <-- BROWSE HEADER --> */
+
+.section-header {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    color: #333;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: -5px;
+}
+
+.sub-header{
+   font-family: 'Open Sans', sans-serif;
+   font-size: 30px;
+   letter-spacing: 2px;
+   font-weight: 300;
+   line-height: 32px;
+   margin: 0 0 72px;
+   color: #333;
+}
+
+
+.content-section {
+    margin: 1em;
+}
+
+.sub-container {
+    max-width: 900px;
+    margin: right;
+    padding: 0 1.5em;
+}
+
+
+/* <-- AVAILABLE SLOTS --> */
+
+.tour-row {
+    /* border-bottom: 1px solid black; */
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.tour-row:last-child {
+    border: none;
+}
+
+.tour-item {
+    display: inline-block;
+    padding-right: .5em;
+    color: black;
+}
+
+.tour-date {
+    color: #555;
+    width: 11%;
+    font-weight: bold;
+}
+
+.tour-city {
+    width: 24%;
+}
+
+.tour-arena {
+    width: 42%;
+}
+
+.tour-btn {
+  max-width: 19%;
+}
+
+.board{
+  padding: 50px ;
+  border-radius: 15px;
+  background: #f0f0f0;
+  position: relative;
+}
+
+.board:hover{
+  box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+
+.price{
+  float: right;
+}
+.dollar{
+  font-size: 20px;
+}
+
+.price p{
+  float:right;
+  font-size: 50px;
+}
+
+.pricing-card {
+width: 900px;
+height: 200px;
+font-family: 'Open Sans';
+display: flex;
+/* margin: 75px auto; */
+}
+
+.pricing-card:hover{
+box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+
+.card-left {
+background: linear-gradient(65deg, #7b4397 , #dc2430);
+color: white;
+width: 30%;
+padding: 85px 20px;
+border-radius: 15px 0 0 15px;
+}
+
+.dollar{
+font-size: 24px;
+position: relative;
+top: 0px;
+}
+
+.card-right {
+text-align: left;
+background: #f0f0f0;
+width: 70%;
+color: $red;
+border-radius: 0 15px 15px 0;
+padding: 40px 40px;
+}
+
+.price-button{
+background: #ed474a;
+position: absolute;
+border: 0px;
+float: right;
+outline: none;
+color: #fff;
+box-shadow: 0px 10px 10px rgba(0,0,0,0.2);
+font-size: 16px;
+margin-top: 20px;
+/* margin-left: 376px; */
+padding: 12px 25px;
+border-radius: 10px;
+cursor: pointer;
+letter-spacing: 1px;
+z-index: 3;
+
+}
+
+.price-button:hover{
+box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
